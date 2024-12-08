@@ -1,0 +1,9 @@
+[package]
+name = "s3-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aws-sdk-s3 = { version = "1.65.0", features = ["rt-tokio", "behavior-version-latest"] }
+tokio = { version = "1.42.0", features = ["full"] }
+dotenv = "0.15.0"
